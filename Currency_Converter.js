@@ -67,7 +67,7 @@ function calc_rate(){
     let value= input.value.trim();
     let amount=Number(input.value);
     if(value ===""){
-        mess.innerHTML="Please write the amount!!";
+        mess.innerHTML="Please enter the amount!!";
         mess.style.display="block";
         return;
     }
@@ -91,4 +91,5 @@ input.addEventListener("keydown", (e)=>{
         e.preventDefault(); // prevents submitting of the form
         calc_rate();
     }
+
 })
